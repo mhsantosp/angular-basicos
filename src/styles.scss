@@ -3,14 +3,13 @@
   font-weight: 200;
 }
 
-html, body {
-  
+html,
+body {
   background: white;
   margin: 20px;
   color: #3e4144;
   -webkit-font-smoothing: antialiased;
 }
-
 
 dd {
   font-weight: bold;
@@ -25,16 +24,27 @@ button {
   margin-right: 5px;
   margin-left: 5px;
   padding: 5px 10px;
-}
-
-button:hover {
-  background-color: #3e4144;
-}
-
-button:focus{ 
-  outline: none;
+  &:hover {
+    background-color: #3e4144;
+  }
+  &:focus {
+    outline: none;
+  }
 }
 
 .p-1 {
   padding: 1px;
+}
+
+.row {
+  display: flex;
+  .col {
+    flex-grow: 1;
+    margin-right: 10px;
+  }
+}
+
+input {
+  display: block;
+  margin: 5px;
 }
